@@ -24,7 +24,8 @@ load_dotenv()
 
 # Set OpenAI API key and model
 #os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-api_client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+#api_client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+api_client =  OpenAI(api_key=st.secrets["OPENAI_API_KEY"], default_headers={"OpenAI-Beta": "assistants=v2"})
 #api_key = st.secrets["OPENAI_API_KEY"]  # or load however you'd like
 #api_client = OpenAI(api_key=api_key)
 #openai.api_key = os.getenv("OPENAI_API_KEY")
