@@ -23,7 +23,7 @@ load_dotenv()
 
 # Set OpenAI API key and model
 api_key = st.secrets["OPENAI_API_KEY"]  # or load however you'd like
-api_client = OpenAI(api_key=api_key)
+api_client = openai.OpenAI(api_key=api_key)
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 #api_client = openai.OpenAI(api_key=openai.api_key)
 model = "gpt-4o-mini"
