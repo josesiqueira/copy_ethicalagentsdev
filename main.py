@@ -36,8 +36,8 @@ PDFS_DIR = "./pdf_data_sources"
 os.makedirs(PDFS_DIR, exist_ok=True)
 
 # Initializing vector store 
-vector_store = client.beta.vector_stores.create(name="Agents4EthicalSE")
-#vector_store_name = "Agents4EthicalSE"
+#vector_store = vector_stores.create(name="Agents4EthicalSE")
+vector_store_name = "Agents4EthicalSE"
 vector_store, exists = initialize_vector_store(api_client, vector_store_name)
 
 # Uploading pdf data sources to the new vector store
